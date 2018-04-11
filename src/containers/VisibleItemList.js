@@ -5,14 +5,14 @@ import ItemList from '../components/ItemList'
 const getVisibleList = (list, filter) => {
   switch (filter) {
     case 'SHOW_UPDATED':
-      return list.filter(t => t.is_updated)
+      return list.list.filter(t => t.is_updated)
     case 'SHOW_DELETED':
-      return list.filter(t => t.is_deleted)
+      return list.list.filter(t => t.is_deleted)
     case 'SHOW_RAW_DATA':
-      return list.filter(t => t.is_raw_data)
+      return list.list.filter(t => t.is_raw_data)
     case 'SHOW_ALL':
     default:
-      return list
+      return list.list
   }
 }
 

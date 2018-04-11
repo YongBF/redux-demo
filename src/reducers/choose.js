@@ -1,4 +1,4 @@
-const choose = (state = {},action) => {
+const choose = (state = {filter:'SHOW_ALL'},action) => {
     switch(action.type){
         case 'CHOOSE_ITEM':
             if(state.filter === 'SHOW_ALL'){
